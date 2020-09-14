@@ -7,14 +7,14 @@
     android:background="#FFFFFF"
     android:gravity="top"
     android:orientation="vertical">
+	<android.support.v7.widget.Toolbar
+		android:elevation="5dp"
+		android:id="@+id/fragment_editor_Toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/fragment_editor_Toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="5dp"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <com.dream.highlighteditor.editor.TextEditor
         android:id="@+id/textEditor"

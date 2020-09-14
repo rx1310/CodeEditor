@@ -1,17 +1,5 @@
 package com.dream.highlighteditor.activity;
 
-import android.content.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
-import androidx.annotation.*;
-import androidx.appcompat.app.*;
-import androidx.appcompat.widget.*;
-import com.dream.highlighteditor.*;
-import com.dream.highlighteditor.editor.*;
-import com.dream.highlighteditor.view.*;
-
-import androidx.appcompat.widget.Toolbar;
 
 /*
  项目名：代码笔记
@@ -22,7 +10,23 @@ import androidx.appcompat.widget.Toolbar;
  创建时间：2018-11-09 12:07
  描述：编辑代码
  */
-public class EditCodeActivity extends AppCompatActivity {
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+import com.dream.highlighteditor.R;
+import com.dream.highlighteditor.editor.TextEditor;
+import com.dream.highlighteditor.view.SymbolView;
+
+public class EditCodeActivity extends AppCompatActivity
+ {
     private TextEditor content_edit;//内容编辑框
     private Toolbar toolbar;
     private SymbolView sv;
